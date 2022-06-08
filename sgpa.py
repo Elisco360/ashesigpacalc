@@ -6,7 +6,7 @@ import annotated_text
 ba_courses = pd.read_csv("majors/BA.csv")
 mis_courses = pd.read_csv("majors/MIS.csv")
 cs_courses = pd.read_csv("majors/CS.csv")
-ce_courses = pd.read_csv("majors/CE.csV")
+ce_courses = pd.read_csv("majors/CE.csv")
 ee_courses = pd.read_csv("majors/EE.csv")
 me_courses = pd.read_csv("majors/ME.csv")
 
