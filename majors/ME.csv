@@ -1,0 +1,57 @@
+﻿Department,Course,Credit
+Humanities,Written and Oral Comm.,1
+Humanities,Text and Meaning,1
+Humanities,Leadership 1,0.5
+Humanities,Leadership 2,0.5
+Humanities,Leadership 3,0.5
+Humanities,Leadership 4,1
+Humanities,Principles of Economics,1
+Business,FDE I,1
+Business,FDE II,1
+Mathematics,Engineering Calculus,1
+Mathematics,Calculus 1 (if you didn't take eng. Calc),1
+Mathematics,Calculus 2(only if calc 1),1
+Mathematics,Multivariable Calc. & Linear Alg.,1
+Mathematics,Diff. Eqs. & Numerical Methods,1
+Mathematics,Statistics for Engineering,1
+Computing,Computer Programming for Eng.,1
+Science,Physics I: Mechanics,1
+Science,Physics II: Electromagnetism,1
+Science,Material Science & Chemistry,1
+Research,3rd Yr. Grp. Project & Seminar,0.5
+Non-major elective,Africana,1
+Non-major elective,Non-major elective,1
+Core,Introduction to Engineering,1
+Core,Instrumentation for Engineering*,0.5
+Core,Applied Programming for Eng.*,0.5
+Core,System Dynamics,1
+Core,Control Systems,1
+Core,Manufacturing Processes,1
+Core,Circuits & Electronics,1
+Core,Project Mgmt. & Prof. Practice,1
+Core,Mechanical Machine Design,1
+Core,"Intro to Electrical Machines &
+    Power Electronics",1
+Core,Thermodynamics,1
+Core,"Fundamentals of Thermal Fluid
+    Science & Heat Transfer",1
+Core,"Mechanics of Materials /
+    Structural Engineering",1
+Core,Fluid Mechanics,1
+Electives,Other Elective,1
+Electives,Introduction to Environmental Science & Engineering,1
+Electives,Data Structures and Algorithms,1
+Electives,Networks and Data Communication,1
+Electives,Operating System,1
+Electives,Power System Analysis,1
+Electives,Thermal Systems & Applications,1
+Electives,Mechanical Machine Design,1
+Electives,Mechanics of Engineering / Structural Engineering,1
+Electives,Intermediate Computer Programming,1
+Electives,Database Management,1
+Electives,Software Engineering,1
+Electives,Robotics,1
+Electives,Introduction to Electrical Machines and Power Electronics,1
+Electives,Digital and Analog Signal Processing in Telecommunications,1
+Electives,Fluid Mechanics & Applications,1
+Capstone,Capstone,1

@@ -1,0 +1,50 @@
+﻿Department,Course,Credit
+Humanities,Written and Oral Comm.,1
+Humanities,Text and Meaning,1
+Humanities,Leadership 1,0.5
+Humanities,Leadership 2,0.5
+Humanities,Leadership 3,0.5
+Humanities,Leadership 4,1
+Humanities,Principles of Economics,1
+Business,FDE I,1
+Business,FDE II,1
+Business,Finance for Non-Finance Mgrs,1
+Mathematics,Calculus 1,1
+Mathematics,Calculus 2,1
+Mathematics,Pre-Calculus 1,1
+Mathematics,Pre-Calculus 2,1
+Mathematics,Applied Calculus (Pre-Calc Track Only),1
+Mathematics,Statistics,1
+Mathematics,Linear Algebra,1
+Computing,Intro to Computing & Information Systems,1
+Research,Research Methods,1
+Non-major elective,Africana,1
+Non-major elective,Non-major elective,1
+Core,Computer Programming for CS,1
+Core,Discrete Structures and Theory,1
+Core,Data Structures and Algorithms,1
+Core,Computer Org. & Arch.,1
+Core,Human Computer Interaction,1
+Core,Software Engineering,1
+Core,Database Systems,1
+Core,Intermediate Comp. Prog.,1
+Core,Web Technologies,1
+Core,Networks & Data Comm.,1
+Core,Operating Systems,1
+Core,Algorithm Design & Analysis,1
+Elective,Artificial Intelligence,1
+Elective,Machine learning,1
+Elective,Robotics,1
+Elective,Computer Graphics,1
+Elective,Advanced Database Systems,1
+Elective,E-Commerce,1
+Elective,Mobile Application Development,1
+Elective,Parallel and Distributed Computing,1
+Elective,Neural Networks,1
+Elective,Data Mining,1
+Elective,Other Elective,1
+Capstone,Applied Project,1
+Capstone,Thesis 1,1
+Capstone,Thesis 2,1
+Capstone,Entrepreneurship 1,1
+Capstone,Entrepreneurship 2,1
