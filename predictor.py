@@ -25,8 +25,7 @@ def target():
         else:
             required_credits = 33.5
         manipulate(required_credits)
-    elif major == "🤖 Computer Engineering" or major == "⚡ Electrical Engineering" or major == "🏿‍🔧 Mechanical " \
-                                                                                               "Engineering":
+    elif major == "🤖 Computer Engineering" or major == "⚡ Electrical Engineering" or major == "🏿‍🔧 Mechanical Engineering":
         pre_c = st.checkbox("Calculus track")
         if pre_c:
             required_credits = 36.5
@@ -45,8 +44,8 @@ def manipulate(r_cds):
     l, r = st.columns(2)
     curr_gpa = l.number_input("Current GPA", min_value=0.00, max_value=4.00, step=0.01)
     curr_cds = r.number_input("Number of credits that correspond the provided current GPA ", min_value=0.0,
-                              max_value=34.5)
-    t_gpa = l.number_input("Target GPA", min_value=0.00, max_value=4.00)
+                              max_value=34.5, step=0.5)
+    t_gpa = l.number_input("Target GPA", min_value=0.00, max_value=4.00, )
     rm_cds = r.number_input("Remaining Credits till Graduation", value=(r_cds - curr_cds), disabled=True)
 
     st.markdown("\n\n\n")
@@ -60,7 +59,7 @@ def manipulate(r_cds):
         with rr:
             annotated_text.annotated_text(annotated_text.annotation(str(value), "REQUIRED GPA OVER " + str(
                 rm_cds) + " CREDITS TO ATTAIN " + str(round(t_gpa, 2)), background="#e6ffff",
-                                                                    color="black", font_size="25px"))
+                                                                    color="black", font_size="23px"))
 
         if value > 4.00:
             val = round(((rm_cds * 4.0) + (curr_gpa * curr_cds)) / r_cds, 2)
