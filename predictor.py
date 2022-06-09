@@ -59,7 +59,7 @@ def manipulate(r_cds):
         with rr:
             annotated_text.annotated_text(annotated_text.annotation(str(value), "REQUIRED GPA OVER " + str(
                 rm_cds) + " CREDITS TO ATTAIN " + str(round(t_gpa, 2)), background="#e6ffff",
-                                                                    color="black", font_size="23px"))
+                                                                    color="black", font_size="22px"))
 
         if value > 4.00:
             val = round(((rm_cds * 4.0) + (curr_gpa * curr_cds)) / r_cds, 2)
