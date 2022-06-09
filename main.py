@@ -18,9 +18,9 @@ def main():
         st.markdown("<hr>", unsafe_allow_html=True)
         st.markdown("\n\n")
         with st.expander("Wanna talk or Need Help?"):
-            st.markdown("* [Academic Advisor](emmanuel.ntow@ashesi.edu.gh)")
-            st.markdown("* [Maths Center](elijah.boateng@ashesi.edu.gh)")
-            st.markdown("* [Writing Center](writing@ashesi.edu.gh)")
+            st.markdown("* [Academic Advisor](mailto:emmanuel.ntow@ashesi.edu.gh)")
+            st.markdown("* [Maths Center](mailto:elijah.boateng@ashesi.edu.gh)")
+            st.markdown("* [Writing Center](mailto:writing@ashesi.edu.gh)")
             st.markdown("* [Peer Tutorship](https://ashesipeertutors.herokuapp.com/)")
 
     if option == "🧮 GPA Calculator":
