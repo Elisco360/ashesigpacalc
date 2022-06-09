@@ -10,7 +10,7 @@ def main():
                       menu_items={
                                      'Get Help': 'ashesi.edu.gh',
                                      'Report a bug': "https://www.linkedin.com/in/elijah-kwaku-adutwum-boateng-074733194/",
-                                     'About': "Feel free and explore ma gee 😜"
+                                     'About': "Feel free and explore my gee 😜"
                                 }
                       )
     st.markdown("<h1 style='text-align: center'>ASHESI GPA CALCULATOR</h1>", unsafe_allow_html=True)
