@@ -6,7 +6,13 @@ from predictor import target
 
 
 def main():
-    st.set_page_config(page_icon='😒', page_title='Ashesi GPA Calculator', layout="wide")
+    st.set_page_config(page_icon='😒', page_title='Ashesi GPA Calculator', layout="wide",
+                      menu_items={
+                                     'Get Help': 'Contact the [Academic Advisor](mailto:emmanuel.ntow@ashesi.edu.gh)',
+                                     'Report a bug': "Contact the [Developer](mailto:elijah.boateng@ashesi.edu.gh)",
+                                     'About': "Feel free and explore ma gee 😜"
+                                }
+                      )
     st.markdown("<h1 style='text-align: center'>ASHESI GPA CALCULATOR</h1>", unsafe_allow_html=True)
     with st.sidebar:
         st.header("Menu")
