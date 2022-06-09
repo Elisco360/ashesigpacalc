@@ -8,8 +8,8 @@ from predictor import target
 def main():
     st.set_page_config(page_icon='😒', page_title='Ashesi GPA Calculator', layout="wide",
                       menu_items={
-                                     'Get Help': 'Contact the [Academic Advisor](mailto:emmanuel.ntow@ashesi.edu.gh)',
-                                     'Report a bug': "Contact the [Developer](mailto:elijah.boateng@ashesi.edu.gh)",
+                                     'Get Help': 'mailto:emmanuel.ntow@ashesi.edu.gh',
+                                     'Report a bug': "mailto:elijah.boateng@ashesi.edu.gh",
                                      'About': "Feel free and explore ma gee 😜"
                                 }
                       )
