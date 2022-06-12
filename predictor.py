@@ -72,7 +72,7 @@ def manipulate(r_cds):
             st.caption("(Assuming you make straight A/A+ for all your remaining " + str(rm_cds) + " credits)")
         else:
             mini = minim(rm_cds, rgpa)
-            st.info("You need a minimum of **"+str(mini[0])+" "+mini[1]+"s** to get the required GPA.")
+            st.info("You need a maximum of **"+str(mini[0])+" "+mini[1]+"s** to get the required GPA.")
 
 
 def minim(rcds, rgpa):
