@@ -1,9 +1,11 @@
+import math
+
 import annotated_text
 import streamlit as st
 
 
 def target():
-    st.title("Target GPA Calculate")
+    st.title("Target GPA Calculator")
 
     st.info("This calculator allows you to set a target and tells you what you need to achieve that target")
 
@@ -55,6 +57,7 @@ def manipulate(r_cds):
 
     if confirm:
         value = calc(curr_gpa, curr_cds, r_cds, t_gpa, rm_cds)
+        rgpa = value
         st.markdown("\n\n\n")
         with rr:
             annotated_text.annotated_text(annotated_text.annotation(str(value), "REQUIRED GPA OVER " + str(
@@ -63,6 +66,26 @@ def manipulate(r_cds):
 
         if value > 4.00:
             val = round(((rm_cds * 4.0) + (curr_gpa * curr_cds)) / r_cds, 2)
+            r_gpa = val
             st.warning("Since the required GPA for your target is out of scale, note that the highest GPA you can "
                        "attain is **" + str(val) + "**")
             st.caption("(Assuming you make straight A/A+ for all your remaining " + str(rm_cds) + " credits)")
+        else:
+            mini = minim(rm_cds, rgpa)
+            st.info("You need a minimum of **"+str(mini[0])+" "+mini[1]+"s** to get the required GPA.")
+
+
+def minim(rcds, rgpa):
+    g = ["B+", "B", "C+", "C", "D+", "D", "E"]
+    x = rcds * rgpa
+    y = rcds * 4
+    z = y - x
+    a = z / 0.5
+
+    n = a
+    t = 1
+    while a > rcds:
+        a = n * 0.5 / (t - 0.5)
+        t += 1
+
+    return [math.ceil(a), g[(t - 1)]]
