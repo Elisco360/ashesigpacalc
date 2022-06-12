@@ -44,10 +44,10 @@ def calc(curr_gpa, curr_cds, r_cds, t_gpa, rm_cds):
 def manipulate(r_cds):
     st.markdown("\n\n\n")
     l, r = st.columns(2)
-    curr_gpa = l.number_input("Current GPA", min_value=0.00, max_value=4.00, step=0.01)
-    curr_cds = r.number_input("Number of credits that correspond the provided current GPA ", min_value=0.0,
+    curr_gpa = l.number_input("Current CGPA", min_value=0.00, max_value=4.00, step=0.01)
+    curr_cds = r.number_input("Number of credits that correspond the provided current CGPA ", min_value=0.0,
                               max_value=34.5, step=0.5)
-    t_gpa = l.number_input("Target GPA", min_value=0.00, max_value=4.00, )
+    t_gpa = l.number_input("Target CGPA", min_value=0.00, max_value=4.00, )
     rm_cds = r.number_input("Remaining Credits till Graduation", value=(r_cds - curr_cds), disabled=True)
 
     st.markdown("\n\n\n")
