@@ -27,7 +27,7 @@ def target():
         else:
             required_credits = 33.5
         manipulate(required_credits)
-    elif major == "🤖 Computer Engineering" or major == "⚡ Electrical Engineering" or major == "🏿‍🔧 Mechanical Engineering":
+    elif major == "🤖 Computer Engineering" or major == "⚡ Electrical Engineering" or major == "👨🏿‍🔧 Mechanical Engineering":
         pre_c = st.checkbox("Calculus track")
         if pre_c:
             required_credits = 36.5

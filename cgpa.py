@@ -3,7 +3,6 @@ import annotated_text
 
 sems = {"Year 1 Semester 1": "Semester 1",
         "Year 1 Semester 2": "Semester 2",
-        "Year 1 Summer School": "Semester 2.5",
         "Year 2 Semester 1": "Semester 3",
         "Year 2 Semester 2": "Semester 4",
         "Year 2 Summer School": "Semester 4.5",
