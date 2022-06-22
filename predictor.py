@@ -38,7 +38,7 @@ def target():
 
 def calc(curr_gpa, curr_cds, r_cds, t_gpa, rm_cds):
     val = ((t_gpa * r_cds) - (curr_gpa * curr_cds)) / rm_cds
-    return round(val, 2)
+    return val
 
 
 def manipulate(r_cds):
@@ -60,11 +60,11 @@ def manipulate(r_cds):
         rgpa = value
         st.markdown("\n\n\n")
         with rr:
-            annotated_text.annotated_text(annotated_text.annotation(str(value), "REQUIRED GPA OVER " + str(
+            annotated_text.annotated_text(annotated_text.annotation(str(round(value, 2)), "REQUIRED GPA OVER " + str(
                 rm_cds) + " CREDITS TO ATTAIN " + str(round(t_gpa, 2)), background="#e6ffff",
                                                                     color="black", font_size="22px"))
 
-        if value > 4.00:
+        if round(value, 2) > 4.00:
             val = round(((rm_cds * 4.0) + (curr_gpa * curr_cds)) / r_cds, 2)
             r_gpa = val
             st.warning("Since the required GPA for your target is out of scale, note that the highest GPA you can "
@@ -87,5 +87,4 @@ def minim(rcds, rgpa):
     while a > rcds:
         a = n * 0.5 / (t - 0.5)
         t += 1
-
-    return [math.ceil(a), g[(t - 1)]]
+    return [math.floor(abs(a)), g[(t - 1)]]
