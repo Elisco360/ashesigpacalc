@@ -3,15 +3,16 @@ from streamlit_option_menu import option_menu
 from sgpa import sem_gpa
 from cgpa import cum_gpa
 from predictor import target
+from manual import use
 
 
 def main():
-    st.set_page_config(page_icon='😒', page_title='Ashesi GPA Calculator', layout="wide")
+    st.set_page_config(page_icon='🎓', page_title='Ashesi GPA Calculator', layout="wide")
     st.markdown("<h1 style='text-align: center'>ASHESI GPA CALCULATOR</h1>", unsafe_allow_html=True)
     with st.sidebar:
         st.header("Menu")
-        option = option_menu('', ['🧮 GPA Calculator', '📊 CGPA Calculator', '🔭 Target GPA Calculator'],
-                             icons=["nothing", "nothing", "nothing"],
+        option = option_menu('', ['🧮 GPA Calculator', '📊 CGPA Calculator', '🔭 Target GPA Calculator', '🤔 How to use'],
+                             icons=["nothing", "nothing", "nothing", "nothing"],
                              menu_icon='nothing',
                              orientation='vertical')
         st.markdown("\n\n\n\n")
@@ -29,6 +30,8 @@ def main():
         cum_gpa()
     elif option == "🔭 Target GPA Calculator":
         target()
+    elif option == "🤔 How to use":
+        use()
 
 
 main()

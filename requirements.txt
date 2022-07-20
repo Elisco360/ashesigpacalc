@@ -95,7 +95,7 @@ smmap==5.0.0
 soupsieve==2.3.2.post1
 st-annotated-text==3.0.0
 stack-data==0.2.0
-streamlit==1.9.2
+streamlit==1.11.0
 streamlit-authenticator==0.1.5
 streamlit-chat==0.0.2.1
 streamlit-echarts==0.4.0
